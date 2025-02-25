@@ -11,7 +11,10 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/14.jpg" class="img-fluid" alt="">
+          {% load static %}
+
+      <img src="{% static 'img/Images/download.png' %}" alt="" class="img-fluid">
+
 
         </div>
         <!--Grid column-->
@@ -28,14 +31,14 @@
               </a>
             </div>
 
-            <p class="lead">
+            <p class="lead font-weight-bold">
               {% if object.discount_price %}
               <span class="mr-1">
-                <del>${{ object.price }}</del>
+                <del>৳{{ object.price }}</del>
               </span>
-              <span>${{ object.discount_price }}</span>
+              <span>৳{{ object.discount_price }}</span>
               {% else %}
-              <span>${{ object.price }}</span>
+              <span>৳{{ object.price }}</span>
               {% endif %}
             </p>
 
@@ -79,9 +82,8 @@
 
           <h4 class="my-4 h4">Additional information</h4>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus suscipit modi sapiente illo soluta odit
-            voluptates,
-            quibusdam officia. Neque quibusdam quas a quis porro? Molestias illo neque eum in laborum.</p>
+          <p>TubaMart is a cutting-edge e-commerce platform designed to provide a seamless and user-friendly online shopping experience for customers. 
+            Offering a wide variety of products across multiple categories, TubaMart focuses on high-quality, eco-friendly, and affordable items. </p>
 
         </div>
         <!--Grid column-->
@@ -95,7 +97,7 @@
         <!--Grid column-->
         <div class="col-lg-4 col-md-12 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/11.jpg" class="img-fluid" alt="">
+          <img src="{% static 'img/Images/clariss-canned-food-mushroom-430x430.png' %}" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -103,7 +105,7 @@
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/12.jpg" class="img-fluid" alt="">
+          <img src="{% static 'img/Images/pran-ghee.jpg' %}" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -111,7 +113,7 @@
         <!--Grid column-->
         <div class="col-lg-4 col-md-6 mb-4">
 
-          <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/13.jpg" class="img-fluid" alt="">
+          <img src="{% static 'img/Images/radhuni-biryani-masala-40-gm.jpeg' %}" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
